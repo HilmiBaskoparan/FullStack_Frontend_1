@@ -1,1 +1,1 @@
-alert("Uyarı !!!");
+alert("Hello\nI am an alert box!")
