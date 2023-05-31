@@ -25,6 +25,10 @@
 
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Serif:ital@1&family=Playfair:wght@300&display=swap"
+        rel="stylesheet">
 
     <!-- JQuery UI -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
@@ -46,18 +50,72 @@
                 live: true        // default
             }
         ).init() </script>
-    
+
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar_id">
     <!-- Start Codes -->
 
-    <p class="text-danger">Bu bir metindir.</p>
+    <!-- navbar start-->
+    <nav id="navbar_id"></nav>
+    <!-- navbar end-->
+
+    <!-- header start-->
+    <header id="header_id"></header>
+    <!-- header end-->
+
+    <!-- main start-->
+    <main id="main_id">
+        <section>
+            <h2>Full Stack Developer</h2>
+            <p>Full Stack Development, Front End ve Back End de dahil olmak üzere uçtan uca tüm yazılım geliştirme
+                süreçlerini kapsar.
+                Front End, kullanıcı arayüzleri ile ilgilenirken; Back End, uygulamaların iş akış süreçleri ile
+                ilgilenir.
+                Full Stack ise Front End, Back End ve veri tabanı süreçleriyle ilgilenir. </p>
+
+            <p>Full Stack Developer, hem kullanıcı arayüzünü geliştiren hem de Back End kısmında iş akışlarını kontrol
+                eden kişidir.
+                Full Stack Developer birden fazla programlama dilinde kendisini geliştirdiği için bir teknolojiden
+                diğerine kolayca geçerek geliştirme yapabilir.
+                Bitmek bilmeyen bir merak duygusu, bir şeyin nasıl çalıştığını bilmek ve onun arkasındaki işlevleri
+                incelemek Full Stack Developer’ın özelliklerini tanımlayacak en önemli açıklamalardan biridir. </p>
+
+            <p>
+                <span style="font-style: italic;">Kaynakça için <a href="https://coderspace.io/sozluk/full-stack" target="_blank">tıklayınız.</a></span> 
+            </p>
+            
+
+            <h2>Full Stack Developer Nedir ve Ne Yapar?</h2>
+            <p>Full Stack Developer, uçtan uca bir uygulamayı hızlı ve verimli bir şekilde oluşturmak için kullanılan
+                tüm teknolojiler hakkında bilgi sahibi ve sorumlu olan kişidir.
+                Full Stack Developer çeşitli sorumluluklar üstlenir. Full Stack Developer’ın sorumluluklarından bazıları
+                şunlardır:</p>
+
+            <ul>
+                <li>Projeyi veya uygulamayı geliştirmek için doğru teknolojilerin seçilmesine karar verir.</li>
+                <li>HTML, JavaScript ve CSS gibi programlama dillerini bilir ve bu teknolojileri kullanarak geliştirme yapar.</li>
+                <li>Veri tabanlarını ve sunucuları yönetir.</li>
+                <li>Projeyi uçtan uca takip eder ve gerekli düzenlemeleri yapar.</li>
+                <li>Front End ve Back End kısmının test edilmesine yardımcı olur.</li>
+                <li>Diğer geliştiriciler ve tasarımcılar ile iletişim kurar.</li>
+                <li>Proje boyunca Clean Kod (temiz kod) yazar.</li>
+                <li>Teknoloji haberlerini sürekli olarak takip eder. Gelecek teknoloji güncellemelerine nasıl uyum sağlayacaklarını düşünür.  </li>
+            </ul>
+
+            <i class="fa-solid fa-user"></i>
+            <img src="./img/computer-1.png" alt="Picture is not here!">
+        </section>
+    </main>
+    <!-- main end-->
+
+    <!-- footer start-->
+    <footer id="footer_id"></footer>
+    <!-- footer end-->
 
     <!-- End Codes -->
-
     <!-- Counter JS -->
     <!-- Waypoints JavaScript Libraries -->
     <script src="./experiences/waypoints/waypoints.min.js"></script>
@@ -72,7 +130,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
-    
+
     <!-- external js -->
     <script src="./template.js"></script>
 </body>

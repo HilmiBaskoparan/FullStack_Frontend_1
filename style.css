@@ -1,4 +1,66 @@
-p {
-    font-size: 2rem;
-    font-weight: bold;
+/*
+Project Name: Full Stack Developer Blog Page
+-Name: Blog Page
+-Author: Hilmi Başkoparan
+-Version: v.1
+-Description: This project is a blog page about full stack developer.
+*/
+
+
+/*===========================================================================
+*    GENERAL PROPERTY
+===========================================================================*/
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    position: relative;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0 3rem;
+    text-align: justify;
+    /*font-size: 1.5rem !important;*/
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+i {
+    font-size: 4rem;
+    color:rgba(13, 149, 228, 0.6);
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+img:hover {
+    cursor: pointer;
+    border: 0.1rem solid rgba(13, 149, 228, 0.6);
+    opacity: 0.9;
+    transition: 1s all;
+}
+
+.my_clearfix::after {
+    content:"";
+    display: block;
+    clear:both;
 }
