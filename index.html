@@ -55,11 +55,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar_id">
+<body data-bs-spy="scroll" data-bs-target="#navbar_first">
     <!-- Start Codes -->
+    <noscript>Bu browser JS desteklememektedir.</noscript>
 
     <!-- navbar start-->
-    <nav id="navbar_id"></nav>
+    <nav id="navbar_first">
+        <div class="container">
+            <div class="row">
+                <div id="navbar_first_left" class="col-9">
+                    <ul>
+                        <li><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin link-primary"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube link-danger"></i></li></a>
+                        <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github link-light"></i></li></a>
+                        <li><a href="https://www.blogger.com/" target="_blank"><i class="fa-solid fa-blog link-warning"></i></li></a>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram link-light"></i></li></a>
+                    </ul>
+                </div>
+                <div id="navbar_first_right" class="col-3">
+                    <button class="btn btn-sm btn-danger"><i class="fa-solid fa-circle-user link-light"></i></button>
+                    <button class="btn btn-sm btn-primary"><i class="fa-solid fa-address-card link-light"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="navbar_second"></nav>
     <!-- navbar end-->
 
     <!-- header start-->
