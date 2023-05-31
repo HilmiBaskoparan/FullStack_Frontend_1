@@ -120,3 +120,16 @@ img:hover {
     margin-right: 0.4rem;
 }
 
+/*===========================================================================
+*    FOOTER
+===========================================================================*/
+footer {
+    height: 15rem;
+    width: auto;
+    background-color: black;
+    color: white;
+}
+
+#copy {
+    height: 1.7rem;
+}

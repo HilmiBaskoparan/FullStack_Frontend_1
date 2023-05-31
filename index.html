@@ -73,12 +73,50 @@
                     </ul>
                 </div>
                 <div id="navbar_first_right" class="col-3">
-                    <button class="btn btn-sm btn-danger"><i class="fa-solid fa-circle-user link-light"></i></button>
+                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fa-solid fa-circle-user link-light"></i></button>
                     <button class="btn btn-sm btn-primary"><i class="fa-solid fa-address-card link-light"></i></button>
                 </div>
             </div>
         </div>
     </nav>
+    
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Giriş</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Important: password, name, user, username bunları değiştirin.-->
+                <div class="modal-body">
+                    <form action="#" method="post" autocomplete="on">
+                        <div class="form_group mb-3">
+                            <label for="email_data">Email</label>
+                            <input type="email" id="email_data" name="email_data" class="form-control" placeholder="Emailinizi giriniz..." required autofocus />
+                            <label class="text-danger">Email Yanlış!</label>
+                        </div>
+                        <div class="form_group mb-3">
+                            <label for="passwd">Şifre</label>
+                            <input type="password" id="passwd" name="passwd" class="form-control" placeholder="Şifrenizi giriniz..." required autofocus />
+                            <label class="text-danger">Şifre Yanlış!</label>
+                        </div>
+                        <div class="form_group mb-3">
+                            <button type="reset" class="btn btn-danger">Temizle</button>
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Giriş</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Register: firstName, middleName, surName, email, passwd, address -->
+    
     <!-- Navbar First End-->
 
     <!-- Navbar Second Start-->
@@ -165,7 +203,34 @@
     <!-- main end-->
 
     <!-- footer start-->
-    <footer id="footer_id"></footer>
+    <footer id="footer_id">
+        <section id="footer_contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <h3>Contact</h3>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <h3>About Company</h3>
+                        <p class="line-clamp6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam in doloremque sunt eveniet odio, aperiam distinctio esse consequuntur voluptas facilis nostrum veritatis quasi animi illo quis eius aliquam! Sed, magnam?
+                        Ratione voluptates animi temporibus ab, reprehenderit repellendus nemo tempore laborum fuga nihil reiciendis totam veniam dolorem ut quisquam asperiores autem similique modi optio nisi quam deserunt numquam? Eaque, recusandae mollitia.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h3>Email</h3>
+                        <form action="">
+                            <input type="text" class="form-control mb-1" placeholder="Konu">
+                            <input type="text" class="form-control mb-1" placeholder="Mail">
+                            <textarea name="" id="" cols="20" rows="3"></textarea>
+                            <button class="btn btn-primary">Email Gönder</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="copy" class="text-center bg-dark text-white" id="footer_copy_right">
+            &copy; Bütün hakları saklıdır. <a href="#">Designed and coded by Hilmi Başkoparan</a>
+        </section>
+    </footer>
     <!-- footer end-->
 
     <!-- End Codes -->
