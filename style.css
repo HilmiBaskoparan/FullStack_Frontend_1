@@ -36,6 +36,11 @@ body {
     background-color: var(--template-bg);
 }
 
+main {
+    margin: 3rem 3rem;
+    text-align: justify;
+}
+
 a {
     text-decoration: none;
 }
@@ -49,8 +54,8 @@ ul {
 }
 
 i {
-    font-size: 2rem;
-    color:rgba(13, 149, 228, 0.6);
+    font-size: 1.5rem;
+    /*color:rgba(13, 149, 228, 0.6);*/
 }
 
 img {
@@ -133,3 +138,20 @@ footer {
 #copy {
     height: 1.7rem;
 }
+
+#back_top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0.2rem 0.2rem;
+    /*background-color: #0B5ED7;*/
+    /*color: white;*/
+}
+/*
+#back_top:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #0B5ED7;
+    transition: all 1s;
+}
+*/
