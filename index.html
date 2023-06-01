@@ -57,9 +57,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar_first">
+<body data-bs-spy="scroll" data-bs-target="#navbar_second">
     <!-- Start Codes -->
     <noscript>Bu browser JS desteklememektedir.</noscript>
+    <span id="no_script"></span>
 
     <!-- Navbar First Start-->
     <nav id="navbar_first">
@@ -77,6 +78,8 @@
                 <div id="navbar_first_right" class="col-3">
                     <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fa-solid fa-circle-user link-light"></i></button>
                     <button class="btn btn-sm btn-primary"><i class="fa-solid fa-address-card link-light"></i></button>
+                    <button class="btn btn-sm" style="padding: 3px; margin-left: 10px;"><img src="./img/eng.png" class="flag" alt=""></button>
+                    <button class="btn btn-sm" style="padding: 3px;"><img src="./img/tur.png" class="flag" alt=""></button>
                 </div>
             </div>
         </div>
@@ -134,7 +137,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Anasayfa <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link active" href="#first" aria-current="page">Anasayfa <span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Çalışmalar</a>
@@ -169,7 +172,7 @@
 
     <!-- main start-->
     <main id="main_id">
-        <section>
+        <section id="first">
             <h2>Full Stack Developer</h2>
             <p>Full Stack Development, Front End ve Back End de dahil olmak üzere uçtan uca tüm yazılım geliştirme
                 süreçlerini kapsar.
@@ -215,35 +218,43 @@
     <!-- footer start-->
     <footer id="footer_id">
         <section id="footer_contact">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-lg-3">
-                        <h3>Contact</h3>
+                        <h3 class="text-uppercase" style="margin-left: 2.5rem;">Contact</h3>
+                        <!-- fa-sm fa-lg fa-xl fa-2xl -->
+                        <div class="d-grid gap-2">
+                            <p> <i class="fas fa-home me-3 text-secondary"></i> Ankara / TÜRKİYE</p>
+                            <p> <i class="fas fa-envelope me-3 text-secondary"></i>h.baskoparan@gmail.com</p>
+                            <p> <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                            <p> <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                        </div>
                     </div>
                     <div class="col-md-3 col-lg-3">
-                        <h3>About Company</h3>
-                        <p class="line-clamp6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam in doloremque sunt eveniet odio, aperiam distinctio esse consequuntur voluptas facilis nostrum veritatis quasi animi illo quis eius aliquam! Sed, magnam?
+                        <h3 class="text-uppercase" style="margin-left:2.5rem">About Company</h3>
+                        <p class="line-clamp8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam in doloremque sunt eveniet odio, aperiam distinctio esse consequuntur voluptas facilis nostrum veritatis quasi animi illo quis eius aliquam! Sed, magnam?
                         Ratione voluptates animi temporibus ab, reprehenderit repellendus nemo tempore laborum fuga nihil reiciendis totam veniam dolorem ut quisquam asperiores autem similique modi optio nisi quam deserunt numquam? Eaque, recusandae mollitia.</p>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <h3>Email</h3>
-                        <form action="">
-                            <input type="text" class="form-control mb-1" placeholder="Konu">
-                            <input type="text" class="form-control mb-1" placeholder="Mail">
-                            <textarea name="" id="" cols="20" rows="3"></textarea>
-                            <button class="btn btn-primary">Email Gönder</button>
+                    <div class="col-md col-lg-6">
+                        <h3 class="text-uppercase">Email</h3>
+                        <form action="#" id="form_email">
+                            <input type="text" class="form-control mb-2" placeholder="Konuyu giriniz...">
+                            <input type="text" class="form-control mb-2" placeholder="Mail adresinizi giriniz...">
+                            <textarea class="form-control" rows="3" placeholder="Email Konusu ..."></textarea>
+                            <button type="reset" class="btn btn-danger mt-3">Temizle</button>
+                            <button type="submit" class="btn btn-primary mt-3">Email Gönder</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="copy" class="text-center bg-dark text-white" id="footer_copy_right">
-            2022 - 2023 &copy; Bütün hakları saklıdır. <a href="#">Designed and coded by Hilmi Başkoparan</a>
-        </section>
     </footer>
+    <section id="copy" class="text-center bg-dark text-white" id="footer_copy_right">
+        2022 - 2023 &copy; Bütün hakları saklıdır. <a href="#">Designed and coded by Hilmi Başkoparan</a>
+    </section>
     <!-- footer end-->
 
-    <a id="back_top" href="#navbar_first" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-up"></i></a>
+    <a id="back_top" href="#no_script" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- End Codes -->
     <!-- Counter JS -->
