@@ -7,6 +7,7 @@
     <!-- Turkish character set-->
     <meta charset="utf-8">
 
+    <!-- Favicon-->
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
 
     <!-- responsive design -->
@@ -28,9 +29,7 @@
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <!-- Google Fonts-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Serif:ital@1&family=Playfair:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Serif:ital@1&family=Playfair:wght@300&display=swap" rel="stylesheet">
 
     <!-- JQuery UI -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
@@ -39,11 +38,13 @@
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
     <!-- Animate CSS-->
-    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- wow js-->
-    <script src="js/wow.min.js"></script>
-    <script> new WOW(
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init() </script>
+    <!-- <script> new WOW(
             {
                 boxClass: 'wow',      // default
                 animateClass: 'animated', // default
@@ -51,7 +52,11 @@
                 mobile: true,       // default
                 live: true        // default
             }
-        ).init() </script>
+        ).init() 
+    </script> -->
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
@@ -99,12 +104,12 @@
                     <form action="#" method="post" autocomplete="on">
                         <div class="form_group mb-3">
                             <label for="email_data">Email</label>
-                            <input type="email" id="email_data" name="email_data" class="form-control" placeholder="Emailinizi giriniz..." required autofocus />
+                            <input type="email" id="email_data" name="email_data" class="form-control" placeholder="Emailinizi giriniz..." required />
                             <label class="text-danger">Email Yanlış!</label>
                         </div>
                         <div class="form_group mb-3">
                             <label for="passwd">Şifre</label>
-                            <input type="password" id="passwd" name="passwd" class="form-control" placeholder="Şifrenizi giriniz..." required autofocus />
+                            <input type="password" id="passwd" name="passwd" class="form-control" placeholder="Şifrenizi giriniz..." required />
                             <label class="text-danger">Şifre Yanlış!</label>
                         </div>
                         <div class="form_group mb-3">
@@ -163,11 +168,24 @@
             </div>
       </div>
     </nav>
-    
     <!-- Navbar Second End-->
 
     <!-- header start-->
-    <header id="header_id"></header>
+    <header id="header_id">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="p-5 text-center">
+                        <h1 class="text-uppercase display-3 shadow p-4 wow animate__bounceIn" data-wow-delay="0.3s">Full Stack Developer Eğitimine Hoşgeldiniz</h1>
+                        <h4>Frontend & Backend</h4>
+                        <a href="" class="btn btn-success wow animate__bounceIn" data-wow-delay="0.5s">Bizi Takip Edin</a>
+                        <a href="" class="btn btn-outline-primary wow animate__bounceIn" data-wow-delay="0.6s">Linkedin</a>
+                        <a href="" class="btn btn-danger wow animate__bounceIn" data-wow-delay="0.7s">Youtube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- header end-->
 
     <!-- main start-->
