@@ -34,6 +34,7 @@ body {
     line-height: 1.5;
     font-size: 1rem;
     background-color: var(--template-bg);
+    overflow-x: hidden;
 }
 
 main {
@@ -120,8 +121,7 @@ img:hover {
     background-color: black;
     color: white;
     max-height: 3rem;
-    position: sticky;
-    top: 0;
+    opacity: 0.9;
 }
 
 #navbar_first ul li {
@@ -191,10 +191,34 @@ header h1,h4 {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
+/* COUNTERS */
+#counter {
+    background-color: #0B5ED7;
+    color: white;
+    padding: 4rem 4rem;
+}
+
+.counter_header h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.counter_header p{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.counter_icon {
+    font-size: 5rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
 /*===========================================================================
 *    FOOTER
 ===========================================================================*/
-footer {
+#footer_contact  {
     height: 15rem;
     width: auto;
     background-color: black;
