@@ -53,6 +53,10 @@ ul {
     font-weight: 400;
 }
 
+p {
+    text-align: justify;
+}
+
 i {
     font-size: 1.5rem;
     /*color:rgba(13, 149, 228, 0.6);*/
@@ -165,6 +169,26 @@ header {
 header h1,h4 {
     color: white;
     text-transform: uppercase;
+}
+
+/*===========================================================================
+*    MAIN
+===========================================================================*/
+#studies {
+    margin: 5rem 0rem;
+}
+
+.studies_icon {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    /* https://www.cssmatic.com/ */
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.6);
+}
+
+.studies_icon:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
 /*===========================================================================
